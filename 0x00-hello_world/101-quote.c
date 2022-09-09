@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	char oput[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char oput[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	fwrite(oput, 1, 59, stderr);
+	fwrite(oput, 1, 58, stderr);
 	return (1);
 }
