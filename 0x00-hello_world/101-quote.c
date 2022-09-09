@@ -6,7 +6,7 @@
 int main(void)
 {
 	char oput[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	fwrite(oput, 1, sizeof(oput), stderr);
 
+	fwrite(oput, 1, sizeof(oput), stderr);
 	return (1);
 }
