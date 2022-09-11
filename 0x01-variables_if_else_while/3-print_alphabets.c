@@ -13,4 +13,5 @@ int main(void)
 	for (i = 65; i < 91; i++)
 		putchar(i);
 	putchar(10);
+	return (0);
 }
