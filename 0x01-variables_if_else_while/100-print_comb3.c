@@ -12,7 +12,8 @@ int main(void)
 	{
 		for (q = 48; q < 58; q++)
 		{
-			if (i > q || i == q) {
+			if (i > q || i == q)
+			{
 				continue;
 			}
 			putchar(i);
