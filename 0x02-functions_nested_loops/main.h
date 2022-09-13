@@ -32,3 +32,10 @@ int _islower(int c);
  *Return: returns 1 if @c is alpahabetic otherwise returns 0
  **/
 int _isalpha(int c);
+
+/**
+ *print_sign - prints the sign of a number
+ *@n: the number to be tested. The data type is int
+ *Return: returns 1 if @n > 0, 0 if @n == 0, -1 if @n < 0
+ **/
+int print_sign(int n);
