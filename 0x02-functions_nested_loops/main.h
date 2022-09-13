@@ -25,3 +25,10 @@ void print_alphabet_x10(void);
  *Return: returns 1 if lowercase, otherwise returns 0
  */
 int _islower(int c);
+
+/**
+ *_isalpha - checks if a char is alpahabetic
+ *@c: the char to be tested. The data type is int
+ *Return: returns 1 if @c is alpahabetic otherwise returns 0
+ **/
+int _isalpha(int c);
