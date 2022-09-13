@@ -3,7 +3,7 @@
 /**
  *_islower - cheacks if a char is lowercase
  *@c: the character which is been tested. Expected
- * be of the datatype integer. 
+ * be of the datatype integer.
  (*An assummption that the machine uses ASCII character set
  )* is made
  *Return: returns 1 if lowercase, otherwise returns 0
