@@ -39,3 +39,10 @@ int _isalpha(int c);
  *Return: returns 1 if @n > 0, 0 if @n == 0, -1 if @n < 0
  **/
 int print_sign(int n);
+
+/**
+ *_abs - computes the absolute value of an integer
+ *@n: the number to be tested. The data type is int
+ *Return: returns the absolute value of the passed integer
+ **/
+int _abs(int n);
