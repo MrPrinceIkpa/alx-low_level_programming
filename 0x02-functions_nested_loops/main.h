@@ -53,3 +53,30 @@ int _abs(int n);
  *Return: returns the last digit of the passed integer
  **/
 int print_last_digit(int n);
+
+/**
+ * jack_bauer - Prints every minute of the day of
+ *              Jack Bauer, starting from 00:00 to 23:59.
+ */
+void jack_bauer(void);
+
+/**
+ * times_table - Prints the 9 times table, starting with 0.
+ */
+void times_table(void);
+
+/**
+ * add - Adds two integers.
+ * @num1: The first integer to be added.
+ * @num2: The second integer to be added.
+ *
+ * Return: The result of the addition.
+ */
+int add(int num1, int num2);
+
+/**
+ * print_to_98 - Prints all natural numbers from input to 98,
+ *               in order separated by a comma followed by a space.
+ * @n: The number to begin counting at.
+ */
+void print_to_98(int n);
