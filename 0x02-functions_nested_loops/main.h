@@ -18,3 +18,10 @@ void print_alphabet(void);
  *Return: return is void
  */
 void print_alphabet_x10(void);
+
+/**
+ *_islower - cheacks if a char is lowercase
+ (*An assummption that the machine uses ASCII character set
+ *Return: returns 1 if lowercase, otherwise returns 0
+ */
+int _islower(int c);
