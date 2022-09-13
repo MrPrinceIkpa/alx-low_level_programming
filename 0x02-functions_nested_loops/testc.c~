@@ -1,0 +1,7 @@
+#include "7-print_last_digit.c"
+
+int main(void)
+{
+	print_last_digit(3456);
+	return (0);
+}
