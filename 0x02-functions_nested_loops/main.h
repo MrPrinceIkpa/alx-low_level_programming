@@ -12,3 +12,9 @@ int _putchar(char c);
  *Return: return is void
  */
 void print_alphabet(void);
+
+/**
+ *print_alphabet_x10 - prints the alphabets 10 times
+ *Return: return is void
+ */
+void print_alphabet_x10(void);
