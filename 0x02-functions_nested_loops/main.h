@@ -46,3 +46,10 @@ int print_sign(int n);
  *Return: returns the absolute value of the passed integer
  **/
 int _abs(int n);
+
+/**
+ *print_last_digit - prints the last digit of a number
+ *@n: the number to be tested. The data type is int
+ *Return: returns the last digit of the passed integer
+ **/
+int print_last_digit(int n);
