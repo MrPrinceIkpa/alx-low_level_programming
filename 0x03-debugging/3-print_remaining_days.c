@@ -24,7 +24,7 @@ void print_remaining_days(int month, int day, int year)
 				leap = 1;
 		}
 		else
-			leap = 1
+			leap = 1;
 	}
 	if (leap)
 	{
