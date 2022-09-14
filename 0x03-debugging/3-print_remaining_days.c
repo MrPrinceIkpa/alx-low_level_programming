@@ -30,7 +30,7 @@ void print_remaining_days(int month, int day, int year)
 		leap = 0;
 	if (leap)
 	{
-		if (day >= 60)
+		if (day > 59)
 		{
 			day++;
 		}
