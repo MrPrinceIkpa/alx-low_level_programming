@@ -47,4 +47,4 @@ void print_most_numbers(void);
  *more_numbers - print digits 0 - 14, ten times
  *Return: 0 on completion
  **/
-more_numbers(void);
+void more_numbers(void);
