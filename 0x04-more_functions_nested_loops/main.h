@@ -28,3 +28,11 @@ int _isdigit(int c);
  *Return: 0 on completion
  */
 void print_numbers(void);
+
+/**
+ *mul - multiplies two numbers
+ *@a: First integer
+ *@b: second integer
+ *Return: multiplication result
+ **/
+int mul(int a, int b);
