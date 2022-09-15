@@ -22,3 +22,9 @@ int _isupper(int c);
  * Return: 1 if digit. 0 otherwise.
  */
 int _isdigit(int c);
+
+/**
+ *print_numbers - prints characters 0-9
+ *Return: 0 on completion
+ */
+void print_numbers(void)
