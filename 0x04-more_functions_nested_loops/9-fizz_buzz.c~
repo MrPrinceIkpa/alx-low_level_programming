@@ -1,0 +1,10 @@
+#include <>
+
+/**
+ *main- solves the fizzBuzz test
+ *Return:  0 on completion
+ */
+int main (void)
+{
+	
+}
