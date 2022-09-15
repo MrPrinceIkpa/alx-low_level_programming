@@ -22,8 +22,10 @@ void more_numbers(void)
 			}
 			_putchar(i);
 			if (i == 57)
+			{
 				i = 48;
 				digits++;
+			}
 		}
 		_putchar(10);
 	}
