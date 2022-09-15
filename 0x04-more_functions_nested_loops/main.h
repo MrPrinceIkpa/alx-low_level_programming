@@ -1,4 +1,3 @@
-#include "_putchar.c"
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -28,4 +27,4 @@ int _isdigit(int c);
  *print_numbers - prints characters 0-9
  *Return: 0 on completion
  */
-void print_numbers(void)
+void print_numbers(void);
