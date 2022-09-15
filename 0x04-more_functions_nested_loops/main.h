@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H
+#define _MAIN_H
 
 /**
  * _putchar - writes the character c to stdout
@@ -18,4 +18,4 @@ int _putchar(char c);
  */
 int _isupper(int c);
 
-#endfif /* MAIN_H */
+#endfif
