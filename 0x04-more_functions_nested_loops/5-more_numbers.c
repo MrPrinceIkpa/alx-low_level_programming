@@ -8,27 +8,29 @@ void more_numbers(void)
 {
 	int times, digits, i, breaker;
 
-	digits = 1;
+	digits = 0;
 	breaker = 58;
 
-/*
- *	for (times = 0; times < 10; times++)
- *	{
- *		for (i = 48; i < breaker; i++)
- *		{
- *			if (digits == 1)
- *			{
- *				breaker = 52;
- *				_putchar(49);
- *			}
- *			_putchar(i);
- *			if (i == 57)
- *			{
- *				i = 48;
- *				digits++;
- *			}
- *		}
- *		_putchar(10);
- *	}
-*/
+
+	for (times = 0; times < 10; times++)
+	{
+		for (i = 48; i < breaker; i++)
+		{
+			if (digits == 1)
+			{
+				breaker = 53;
+				_putchar(49);
+			}
+			_putchar(i);
+			if (i == 57)
+			{
+				i = 47;
+				digits++;
+			}
+		}
+		_putchar(10);
+		digits = 0;
+		breaker = 58;
+	}
+
 }
