@@ -34,17 +34,17 @@ void print_numbers(void);
  *@a: First integer
  *@b: second integer
  *Return: multiplication result
- **/
+ */
 int mul(int a, int b);
 
 /**
  *print_most_numbers - print digits execept 2 and 4
  *Return: 0 on completion
- **/
+ */
 void print_most_numbers(void);
 
 /**
  *more_numbers - print digits 0 - 14, ten times
- *Return: 0 on completion
+ *Return: void
  **/
-more_numbers(void);
+void more_numbers(void);
