@@ -48,3 +48,10 @@ void print_most_numbers(void);
  *Return: void
  **/
 void more_numbers(void);
+
+/**
+ *print_line - draws a straight line
+ *@n: the length of the line
+ *Return: void
+ */
+void print_line(int n);
