@@ -76,3 +76,11 @@ void print_square(int size);
  *Return: void
  */
 void print_triangle(int size);
+
+/**
+ * print_number - prints numbers
+ * @n: number to be printed
+ * Return:void
+ */
+
+void print_number(int n);
