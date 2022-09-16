@@ -15,10 +15,8 @@ int main(void)
 	for (sqtint; sqtint > 2; sqtint--)
 	{
 		if (tint % sqtint == 0)
-		{
 			printf("%lu", sqtint);
-			break;
-		}
+		break;
 	}
 	return (0);
 }
