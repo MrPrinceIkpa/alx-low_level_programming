@@ -3,16 +3,14 @@
 
 /**
  *main - prints the largest prime factor of the number 612852475143
- *Return - 0 on completion
+ *Return: 0 on completion
  */
 int main(void)
 {
 	unsigned long int tint, sqtint;
 
 	tint = 612852475143;
-	sqtint = (long int) sqrt(tint);
-
-	for (sqtint; sqtint > 2; sqtint--)
+	for (sqtint = (long int) sqrt(tint); sqtint > 2; sqtint--)
 	{
 		if (tint % sqtint == 0)
 		{
