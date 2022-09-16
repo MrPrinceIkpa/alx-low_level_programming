@@ -10,13 +10,13 @@ int main(void)
 	unsigned long int tint, sqtint;
 
 	tint = 612852475143;
-	sqtint = sqrt(tint);
+	sqtint = (long int) sqrt(tint);
 
 	for (sqtint; sqtint > 2; sqtint--)
 	{
 		if (tint % sqtint == 0)
 		{
-			printf("%lu", sqtint);
+			printf("%lu\n", sqtint);
 			break;
 		}
 	}
