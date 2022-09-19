@@ -11,4 +11,4 @@ void reset_to_98(int *n);
  *@b: a pointer to the second variable
  *Return: void
  */
-void swap_int(int *a, int *b)
+void swap_int(int *a, int *b);
