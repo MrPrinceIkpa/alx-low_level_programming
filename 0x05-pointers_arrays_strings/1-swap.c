@@ -1,9 +1,4 @@
-/**
- *reset_to_98 - resets a variable to 98
- *@n: a pointer to the variable
- *Return:void
- */
-void reset_to_98(int *n);
+#include "main.h"
 
 /**
  *swap_int - swaps the values of two integers
@@ -12,3 +7,10 @@ void reset_to_98(int *n);
  *Return: void
  */
 void swap_int(int *a, int *b)
+{
+	int tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
