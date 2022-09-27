@@ -9,6 +9,7 @@
 char *_strchr(char *s, char c)
 {
 	int i, lidx;
+	char *ptr = 0;
 
 	lidx = -1;
 	for (i = 0; s[i]; i++)
@@ -21,7 +22,7 @@ char *_strchr(char *s, char c)
 	}
 
 	if (lidx < 0)
-		return (0);
+		return (ptr);
 	else
 		return (s + lidx);
 }
