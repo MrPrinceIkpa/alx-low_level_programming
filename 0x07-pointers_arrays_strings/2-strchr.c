@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 	}
 
 	if (lidx < 0)
-		return (1);
+		return (NULL);
 	else
 		return (s + lidx);
 }
