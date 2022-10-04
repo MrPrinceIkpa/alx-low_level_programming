@@ -1,0 +1,30 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ *_strdup - dumps a string to a new memory location
+ *@str: the string to dump
+ *Return: the dump site location in memory
+ */
+char *_strdup(char *str)
+{
+	char *tarr;
+	int i;
+
+	tarr = malloc(sizeof(str));
+
+	if (tarr == NULL)
+		return (NULL);
+
+	for (i = 0; *(str + i); i++)
+	{
+		*(tarr + i) = *(str + i);
+	}
+
+	if (i == 0)
+		return (NULL);
+
+	*(tarr + i + 1) = '\0';
+
+	return (tarr);
+}
