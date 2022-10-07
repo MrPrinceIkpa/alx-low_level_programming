@@ -10,8 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int s1_len, s2_len;
-	int i = 0;
+	int i = 0, i2 = 0, s1_len, s2_len;
 	char *test = s1, *ptr;
 
 	if (s1 == NULL)
@@ -38,10 +37,14 @@ recheck:
 	for (i = 0; i < (s1_len + s2_len + 1); i++)
 	{
 		if (i < s1_len)
+		{
 			ptr[i] = s1[i];
-		else
-			ptr[i] = s2[i - s1_len];
+			continue;
+		}
+		ptr[i] = s2[i2];
+		i2++;
 	}
-	ptr[i] = '\0';
+	printf("length: %d\n", s1_len + s2_len + 1);
+	ptr[s1_len + s2_len] = '\0';
 	return (ptr);
 }
