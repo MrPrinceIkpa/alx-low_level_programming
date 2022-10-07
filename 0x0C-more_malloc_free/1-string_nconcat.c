@@ -1,50 +1,51 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- *string_nconcat - concatenates two strings
- *@s1: the first string
- *@s2: the second string
- *@n: the amount of bytes of s2 to add to s1
- *Return: a pointer to the new memory location or NULL
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * @n: index
+ * Return: char pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i = 0, i2 = 0, s1_len, s2_len;
-	char *test = s1, *ptr;
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
-recheck:
-	while (test[i])
-		i++;
-	if (test == s1)
+
+	while (s1[size1] != '\0')
 	{
-		s1_len = i;
-		i = 0;
-		test = s2;
-		goto recheck;
+		size1++;
 	}
-	else
-		s2_len = i;
-	if ((int) n < s2_len)
-		s2_len = (int) n;
-	ptr = malloc(s1_len + s2_len + 1);
-	if (ptr == NULL)
-		return (NULL);
-	for (i = 0; i < (s1_len + s2_len + 1); i++)
+
+	while (s2[size2] != '\0')
 	{
-		if (i < s1_len)
-		{
-			ptr[i] = s1[i];
-			continue;
-		}
-		ptr[i] = s2[i2];
-		i2++;
+		size2++;
 	}
-	printf("length: %d\n", s1_len + s2_len + 1);
-	ptr[s1_len + s2_len] = '\0';
-	return (ptr);
+
+	if (n > size2)
+		n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
+
+	if (p == NULL)
+		return (0);
+
+	for (i = 0; i < size1; i++)
+	{
+		p[i] = s1[i];
+	}
+
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+
+	p[i] = '\0';
+
+	return (p);
 }
