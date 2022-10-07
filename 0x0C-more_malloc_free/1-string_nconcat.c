@@ -31,7 +31,7 @@ recheck:
 	}
 	else
 		s2_len = i;
-	if ((int) n < s2_len++)
+	if ((int) n < ++s2_len)
 		s2_len = (int) n++;
 	ptr = malloc(s1_len + s2_len + 1);
 
