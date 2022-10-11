@@ -1,5 +1,4 @@
-#ifndef _SUMFILE_
-#define _SUMFILE_
+#ifndef SUM
 
 #define SUM(x, y) ((x) + (y))
 
