@@ -15,6 +15,12 @@ typedef struct dog
 	char *owner;
 } dog_t;
 
+/**
+ * struct dog - structure
+ * @name: string
+ * @age: float
+ * @owner: characters
+ */
 struct dog
 {
 	char *name;
