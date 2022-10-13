@@ -1,0 +1,17 @@
+#include "function_pointers.h"
+
+/**
+ *print_name - prints a name using a function pointer
+ *@name: the name to be printed- an array of char
+ *@f: a pointer to a function
+ *Return: void
+ */
+void print_name(char *name, void (*f)(char *))
+{
+	int i;
+
+	if (name == "\0")
+		return;
+	for (i = 0; name[i] != "\0"; i++)
+		(*f)(name[i]);
+}
