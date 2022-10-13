@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "fuction_pointers.h"
 
 /**
@@ -10,10 +9,11 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	int i, nelem = size / (sizeof(int));
 
 	if (!array || !action)
 		return;
-	for (i = 0; i < size; i++)
+
+	for (i = 0; i < nelem; i++)
 		(*action)(array[i]);
 }
