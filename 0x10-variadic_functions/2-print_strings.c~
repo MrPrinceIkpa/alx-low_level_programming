@@ -1,0 +1,43 @@
+#include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
+/**
+ *_copystr - copies string from one location to another
+ *@add: an address
+ *@mstr: the string to copy
+ *Return: void
+ */
+void _copystr(char *add, char *mstr)
+{
+	int i;
+	add = malloc(sizeof (mstr));
+	for (i = 0; mstr[i] != '\0'; i++)
+	{
+		add[i] = mstr[i];
+	}
+	add[i + 1] = '\0';
+}
+/**
+ *print_strings - prints strings followed by a new line
+ *@seperator: a string to seperate the strings
+ *@n: the amount of strings to be printed
+ *Return: void
+ */
+void print_strings(const char *seperator, const unsigned int n, ...)
+{
+	unsigned int i;
+	va_list trn;
+	char *tmp_str;
+
+	if (n == 0)
+		return;
+	for (i = 0; i < n; i++)
+	{
+		tmp_str = malloc(va_arg(trn, char *));
+		if (tmp[0] == NULL)
+			printf("(nil)");
+		else
+			
+	}
+}
