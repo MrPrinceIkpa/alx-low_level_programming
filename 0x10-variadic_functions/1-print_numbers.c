@@ -3,31 +3,24 @@
 #include <stdarg.h>
 
 /**
- *print_numbers - prints numbers followed by a new line
- *@seperator: a sting seperator for the numbers
- *@n: the amount of numbers to be printed
- *Return: void
+ * print_numbers - prints num
+ * @separator: pointer param
+ * @n: param
  */
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	va_list valist;
 	unsigned int i;
-	va_list trn;
 
-	if (n == 0)
-		return;
-	va_start(trn, n);
+	va_start(valist, n);
+
 	for (i = 0; i < n; i++)
 	{
-		if (i == (n - 1))
-			printf("%d\n", va_arg(trn, int));
-		else
-		{
-			printf("%d", va_arg(trn, int));
-			if (!seperator)
-				continue;
-			else
-				printf("%s", seperator);
-		}
+		printf("%d", va_arg(valist, int));
+		if (separator && i < n - 1)
+			printf("%s", separator);
 	}
-	va_end(trn);
+
+	printf("\n");
+	va_end(valist);
 }
