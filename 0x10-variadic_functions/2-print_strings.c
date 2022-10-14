@@ -33,7 +33,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	char *tmp_str;
 
 	if (n == 0)
-		return (NULL);
+		return;
 	va_start(trn, n);
 	for (i = 0; i < n; i++)
 	{
