@@ -24,7 +24,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		else
 		{
 			printf("%d", va_arg(trn, int));
-			if (seperator[0] == '\0')
+			if (seperator == NULL)
 				continue;
 			else
 				printf("%s", seperator);

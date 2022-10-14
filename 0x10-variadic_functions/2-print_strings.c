@@ -38,7 +38,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		tmp_str = _copystr(va_arg(trn, char *));
-		if (tmp_str[0] == '\0')
+		if (tmp_str == NULL)
 			printf("(nil)");
 		else
 			printf("%s", tmp_str);
